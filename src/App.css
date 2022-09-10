@@ -1,0 +1,37 @@
+.App {
+  text-align: center;
+  border : 1px solid red;
+  width : 20%;
+  margin: 150px auto;
+}
+
+.row{
+  border: 1px solid red;
+  display: flex;
+  width: 100%;
+}
+
+.row>div{
+  border: 1px solid teal;
+  height: 100px;
+  width: 33%;
+  font-size: 50px;
+
+}
+
+.win{
+  border: 1px solid teal;
+  text-align: center;
+}
+.btn-div{
+  /* border: 1px solid red; */
+  text-align: center ;
+}
+.Button{
+  text-align: center;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+}
