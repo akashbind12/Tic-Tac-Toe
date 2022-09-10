@@ -53,7 +53,7 @@ function App() {
     || (box.three == "O" && box.six == "O" && box.nine == "O")) {
     return (
       <>
-        <h1 className='win' >player O win</h1>
+        <h1 className='win' >player O is WINNER !</h1>
         <div className='btn-div'>
             <button className='Button' onClick={handlrestart} >Restart</button>
         </div>
@@ -71,12 +71,24 @@ function App() {
   || (box.three == "X" && box.six == "X" && box.nine == "X")) {
     return (
            <>
-            <h1 className='win' >player X win</h1>
+            <h1 className='win' >player X  is WINNER !</h1>
             <div className='btn-div'>
             <button className='Button' onClick={handlrestart} >Restart</button>
             </div>
           </>)
 }
+
+  if( box.one != "" && box.two != "" && box.three != ""
+  && box.four != "" && box.five != "" && box.six != ""
+    && box.seven != "" && box.eight != "" && box.nine != "") {
+      return (
+        <>
+         <h1 className='win' >DRAW !</h1>
+         <div className='btn-div'>
+         <button className='Button' onClick={handlrestart} >Restart</button>
+         </div>
+       </>)
+  }
 
 
   return (
