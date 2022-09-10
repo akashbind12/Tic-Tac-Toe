@@ -41,13 +41,15 @@ function App() {
     })
   }
   
-
-  if (
+   //checking for "O" winning condition
+  if (  //checking for horizontal rows
        (box.one == "O" && box.two == "O" && box.three == "O")
     || (box.four == "O" && box.five == "O" && box.six == "O")
     || (box.seven == "O" && box.eight == "O" && box.nine == "O")
+       //checking for diagonals
     || (box.one == "O" && box.five == "O" && box.nine == "O")
     || (box.three == "O" && box.five == "O" && box.seven == "O")
+       //checking for vertical rows
     || (box.one == "O" && box.four == "O" && box.seven == "O")
     || (box.two == "O" && box.five == "O" && box.eight == "O")
     || (box.three == "O" && box.six == "O" && box.nine == "O")) {
@@ -59,13 +61,16 @@ function App() {
         </div>
       </>)
   }
-
-  if (
+  
+   //checking for "X" winning condition
+  if ( //checking for horizontal rows
     (box.one == "X" && box.two == "X" && box.three == "X")
   || (box.four == "X" && box.five == "X" && box.six == "X")
   || (box.seven == "X" && box.eight == "X" && box.nine == "X")
+       //checking for diagonals
   || (box.one == "X" && box.five == "X" && box.nine == "X")
   || (box.three == "X" && box.five == "X" && box.seven == "X")
+      //checking for vertical rows
   || (box.one == "X" && box.four == "X" && box.seven == "X")
   || (box.two == "X" && box.five == "X" && box.eight == "X")
   || (box.three == "X" && box.six == "X" && box.nine == "X")) {
@@ -77,7 +82,8 @@ function App() {
             </div>
           </>)
 }
-
+  
+  //checking for "Draw"  condition
   if( box.one != "" && box.two != "" && box.three != ""
   && box.four != "" && box.five != "" && box.six != ""
     && box.seven != "" && box.eight != "" && box.nine != "") {
