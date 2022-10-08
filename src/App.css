@@ -1,22 +1,40 @@
 .App {
   text-align: center;
-  border : 1px solid red;
-  width : 20%;
-  margin: 150px auto;
+  /* border : 1px solid red; */
+  width : 25%;
+  margin: 70px auto;
+  cursor: pointer;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.head{
+  border: 1px solid #3498DB;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: blue;
+  font-weight: 600;
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .row{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   width: 100%;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
 .row>div{
-  border: 1px solid teal;
+  border: 2px solid #3498DB;
   height: 100px;
   width: 33%;
   font-size: 50px;
-
+  color: #3498DB;
+  border-radius: 3px;
 }
 
 .win{

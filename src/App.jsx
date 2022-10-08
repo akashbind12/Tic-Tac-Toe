@@ -99,6 +99,7 @@ function App() {
 
   return (
     <div className="App">  
+      <div className='head' >{state ? "It's O turn" : "It's X turn" }</div>
       <div className='row'>
         <div id="one" onClick={() => handlechange("one")} >{ box.one}</div>
         <div id="two" onClick={() => handlechange("two")}  >{ box.two}</div>
